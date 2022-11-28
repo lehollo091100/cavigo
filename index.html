@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>CAVIGO</title>
+    <link rel="stylesheet" type="text-css" href="font-awesome/css/font-awsome.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <style type="text/css">
+        html,
+        body,
+        div,
+        span,
+        h1,
+        h2,
+        p,
+        a,
+        img,
+        ul,
+        li,
+        article,
+        header,
+        nav {
+            font-family: "Montserrat";
+            font-weight: bolder;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        #head {
+            background: black;
+            opacity: 90%;
+            position: fixed !important;
+            height: 15%;
+            z-index: 1;
+            margin: 0;
+        }
+        
+        .head-logo {
+            float: left;
+            padding-left: 6%;
+            width: 20%;
+        }
+        
+        #head ul {
+            text-align: center;
+            padding-left: 30%;
+            margin-top: 2.7%;
+            margin-right: 50px;
+        }
+        
+        li {
+            list-style-type: none;
+        }
+        
+        #head li {
+            float: left;
+            line-height: 40px;
+            font-size: 17px;
+            width: 110px;
+            height: 40px;
+            position: relative;
+        }
+        
+        a {
+            color: white;
+            text-decoration-line: none;
+        }
+        
+        a:hover {
+            color: rgb(208, 133, 41);
+        }
+        
+        #find {
+            padding-left: 86%;
+        }
+        
+        .cart {
+            margin-top: 40%;
+            margin-left: 91%;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 50px;
+            height: 45px;
+            border-radius: 50%;
+            background-image: linear-gradient( to right, rgb(255, 106, 0), rgb(255, 200, 0));
+            text-align: center;
+            z-index: 2;
+            position: fixed;
+        }
+        
+        #banner {
+            padding-top: 6.5%;
+            padding-left: 3%;
+            overflow: auto;
+        }
+        
+        .background {
+            position: absolute;
+            z-index: -1;
+        }
+        
+        .banner-info {
+            background-color: black;
+            margin-left: 12%;
+            margin-right: 67%;
+            margin-top: 22%;
+            padding-top: 1.5%;
+            padding-bottom: 1.5%;
+            font-size: 26px;
+            text-align: center;
+            border-radius: 100px;
+        }
+        
+        .banner-logo {
+            padding-top: 1%;
+            padding-left: 3%;
+        }
+        
+        .category {
+            text-align: center;
+            overflow: auto;
+            margin-left: 7%;
+            margin-right: 7%;
+        }
+        
+        .cate-title {
+            margin-top: 3%;
+            font-size: 50px;
+            margin-bottom: 2%;
+        }
+        
+        .cate-col {
+            width: 33%;
+            float: left;
+        }
+        
+        .cate-col-title {
+            font-size: 26px;
+            margin-bottom: 2%;
+        }
+        
+        .cate-img {
+            margin-right: 20%;
+            margin-left: 20%;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 10%;
+        }
+        
+        .product-col {
+            width: 50%;
+            float: left;
+        }
+        
+        .pro-img {
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-bottom: 5%;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        
+        .cate-info {
+            background-color: black;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            font-size: 19px;
+            text-align: center;
+            width: 15%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 5px;
+            margin-bottom: 4%;
+            margin-top: 3%;
+        }
+        
+        footer {
+            background-color: #171717;
+            color: white;
+            overflow: auto;
+            padding-bottom: 2%;
+            width: 100%;
+        }
+        
+        .footer-logo {
+            float: left;
+            width: 30%;
+            text-align: center;
+            padding-top: 1%;
+        }
+        
+        .map {
+            background-image: linear-gradient( to right, rgb(255, 106, 0), rgb(255, 200, 0));
+            margin-left: 21%;
+            margin-right: 21%;
+            margin-top: 3%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            font-size: 20px;
+        }
+        
+        .map a:hover {
+            color: rgb(175, 233, 245);
+        }
+        
+        .footer-info {
+            width: 69%;
+            float: left;
+        }
+        
+        .footer-col {
+            padding-top: 3%;
+            width: 30%;
+            float: left;
+            font-size: 17px;
+        }
+        
+        .col-title {
+            padding-bottom: 10px;
+        }
+        
+        .footer-col ul {
+            font-size: 12px;
+            padding-left: 0%;
+        }
+        
+        .footer-col li {
+            padding-bottom: 10px;
+        }
+        
+        .footer-bot {
+            padding-top: 2%;
+            width: 45%;
+            float: left;
+        }
+        
+        .footer-bot ul {
+            font-size: 12px;
+            padding-left: 0%;
+        }
+        
+        .footer-social li {
+            float: left;
+            padding-right: 5%;
+            padding-top: 5px;
+            width: 12%;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="head">
+        <div class="head-logo">
+            <a href="index.html">
+                <img src="image/LOGO1-01.png" width="100%" />
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">SẢN PHẨM</a></li>
+                <li><a href="">NAM</a></li>
+                <li><a href="">NỮ</a></li>
+                <li><a href="">SALE OFF</a></li>
+                <li><a href="">TƯ VẤN</a></li>
+                <li><a href="">SPECIAL</a></li>
+            </ul>
+            <div id="find">
+                <img src="image/find-01.png" width="50px" />
+            </div>
+        </nav>
+    </header>
+    <div class="cart"><img src="image/cart3.svg" width="80%" /></div>
+    <main>
+        <div id="banner">
+            <div class="background">
+                <img src="image/Untitled-9-01.png " width="95% " />
+            </div>
+            <div class="banner-info">
+                <a href="">TÌM HIỂU THÊM</a>
+            </div>
+            <div class="banner-logo">
+                <img src="image/c-01.png" width="40% " />
+            </div>
+        </div>
+        <div class="category">
+            <div class="cate-title">DANH MỤC NHÀ LẠC</div>
+            <div class="cate-col">
+                <div class="cate-col-title">NAM</div>
+                <div class="cate-img">
+                    <img src="image/NAM-01.png" width="100%" />
+                </div>
+            </div>
+            <div class="cate-col">
+                <div class="cate-col-title">NỮ</div>
+                <div class="cate-img">
+                    <img src="image/NỮ-01.png" width="100%" />
+                </div>
+            </div>
+            <div class="cate-col">
+                <div class="cate-col-title">ĐẶC BIỆT</div>
+                <div class="cate-img">
+                    <img src="image/ĐB-01.png" width="100%" />
+                </div>
+            </div>
+        </div>
+        <div class="category">
+            <div class="cate-title">NHÀ LẠC MÊ</div>
+            <div class="product-col">
+                <div class="pro-img">
+                    <a href="product.html">
+                        <img src="image/kn-04.png" width="100%" />
+                    </a>
+                </div>
+                <div style="font-size: 30px">BASIC GO</div>
+                <div style="font-size: 30px">650.000</div>
+                <div>VIỆT NAM ĐỒNG</div>
+            </div>
+            <div class="product-col">
+                <div class="pro-img">
+                    <img src="image/KN-01.png" width="100%" />
+                </div>
+                <div style="font-size: 30px">TRỐNG ĐỒNG ĐÔNG SƠN</div>
+                <div style="font-size: 30px">685.000</div>
+                <div>VIỆT NAM ĐỒNG</div>
+            </div>
+        </div>
+        <div class="category">
+            <div class="cate-info">
+                <a href="">MUỐN XEM NỮA</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <img src="image/LOGO2-02.png" width="100%" />
+            <div class="map">
+                <a href="https://www.google.com/maps/place/273+An+D.+V%C6%B0%C6%A1ng,+Ph%C6%B0%E1%BB%9Dng+3,+Qu%E1%BA%ADn+5,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.7599334,106.6800771,17z/data=!3m1!4b1!4m5!3m4!1s0x31752f1c81c64183:0xd3109d7a7a8f753c!8m2!3d10.7599334!4d106.6822658?hl=vi"
+                    target="“_blank”">TÌM NHÀ LẠC</a
+          >
+        </div>
+      </div>
+      <div class="footer-info">
+        <div style="overflow: auto">
+          <div class="footer-col">
+            <div class="col-title">SẢN PHẨM</div>
+            <ul class="footer-menu">
+              <li>
+                <a href="">NAM</a>
+                </li>
+                <li>
+                    <a href="">NỮ</a>
+                </li>
+                <li>
+                    <a href="">SPECIAL</a>
+                </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <div class="col-title">VỀ NHÀ HẠC</div>
+                <ul class="footer-menu">
+                    <li>
+                        <a href="">TUYỂN DỤNG</a>
+                    </li>
+                    <li>
+                        <a href="">VỀ CAVIGO</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <div class="col-title">LIÊN HỆ</div>
+                <ul class="footer-menu">
+                    <li>
+                        <a href="">EMAIL</a>
+                    </li>
+                    <li>
+                        <a href="">HOTLINE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bot">
+            <div class="col-title">MẠNG XÃ HỘI</div>
+            <ul class="footer-social">
+                <li>
+                    <img src="image/f-01.png" width="100%" />
+                </li>
+                <li>
+                    <img src="image/i-01.png" width="100%" />
+                </li>
+                <li>
+                    <img src="image/t-01.png" width="100%" />
+                </li>
+                <li>
+                    <img src="image/y-01.png" width="100%" />
+                </li>
+            </ul>
+        </div>
+        <div class="footer-bot">
+            <a href="">
+                <img src="image/LOGO1-02.png" width="100%" style="padding-top: 20px" />
+            </a>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
